@@ -1,0 +1,100 @@
+Breakfast & Brunch;American (Traditional);Restaurants
+Sandwiches;Restaurants
+Local Services;IT Services & Computer Repair
+Restaurants;Italian
+Food;Coffee & Tea
+Fast Food;Restaurants
+Mortgage Brokers;Home Services;Real Estate
+Brasseries;Restaurants
+Bars;Sports Bars;Nightlife;American (New);Chicken Wings;Restaurants
+Automotive;Windshield Installation & Repair;Auto Detailing;Wheel & Rim Repair
+Automotive;Auto Parts & Supplies
+Food;Grocery;CSA;Farmers Market
+Specialty Schools;CPR Classes;First Aid Classes;Education
+Event Planning & Services;Venues & Event Spaces
+Shopping;Home Decor;Home & Garden;Furniture Stores
+Books, Mags, Music & Video;Shopping;Bookstores
+Auto Repair;Automotive
+Local Services;Dry Cleaning & Laundry
+Burgers;American (New);Restaurants
+Pizza;Restaurants
+Massage;Beauty & Spas
+Food;Juice Bars & Smoothies
+Pizza;Restaurants
+Bars;Nightlife;Lounges
+Champagne Bars;Bars;Nightlife;Lounges
+Burgers;Restaurants
+Bars;American (Traditional);Nightlife;Restaurants
+Photographers;Session Photography;Event Planning & Services;Event Photography
+Shopping;Drugstores;Beauty & Spas;Food;Convenience Stores;Cosmetics & Beauty Supply
+Active Life;Parks
+Food;Ice Cream & Frozen Yogurt
+Fast Food;Restaurants
+Hair Salons;Beauty & Spas
+Shopping;Doctors;Health & Medical;Eyewear & Opticians
+Shopping;Eyewear & Opticians
+Dermatologists;Doctors;Health & Medical;Skin Care;Beauty & Spas
+Local Services;Community Service/Non-Profit
+Arts & Entertainment;Art Galleries;Shopping
+Food;Coffee & Tea;Cafes;Restaurants
+Hair Salons;Barbers;Men's Hair Salons;Beauty & Spas
+Hair Salons;Hair Extensions;Beauty & Spas;Blow Dry/Out Services
+Bakeries;Food;Desserts
+Car Wash;Automotive
+Hair Salons;Barbers;Hair Extensions;Beauty & Spas
+Hotels & Travel;Arts & Entertainment;Casinos;Event Planning & Services;Hotels
+Pizza;Restaurants
+Food;Bagels;Coffee & Tea;Sandwiches;Restaurants
+Hair Salons;Beauty & Spas
+Delis;Fast Food;Sandwiches;Restaurants
+Active Life;Yoga;Fitness & Instruction
+Videos & Video Game Rental;Books, Mags, Music & Video;Shopping;Video Game Stores
+Beauty & Spas;Nail Salons
+Beauty & Spas;Nail Salons
+Department Stores;Fashion;Shopping
+Food;Ice Cream & Frozen Yogurt
+Portuguese;Restaurants
+Tanning;Spray Tanning;Beauty & Spas
+British;Restaurants
+Creperies;Restaurants
+Food;Ice Cream & Frozen Yogurt
+Bakeries;Food
+Department Stores;Fashion;Shopping
+American (New);Restaurants
+Pizza;Restaurants
+Italian;Pizza;Restaurants
+Doctors;Health & Medical
+Shopping;Drugstores
+Chinese;Restaurants
+Skin Care;Hair Removal;Makeup Artists;Beauty & Spas
+Real Estate Agents;Real Estate Services;Home Services;Real Estate
+Arts & Crafts;Shopping;Fabric Stores;Home & Garden;Home Decor
+Women's Clothing;Fashion;Shopping
+Auto Repair;Automotive;Tires
+Restaurants;Italian
+Home Services;Contractors
+Nightlife;Dance Clubs
+Pet Stores;Pet Services;Aquariums;Pets;Active Life;Aquarium Services
+Massage Therapy;Health & Medical
+Food;Beer, Wine & Spirits;Grocery
+Active Life;Yoga;Gyms;Trainers;Fitness & Instruction
+Fast Food;Restaurants
+Wine Bars;Bars;Restaurants;Nightlife;Italian
+Bakeries;Food;Coffee & Tea;Candy Stores;Specialty Food
+Food;Specialty Food;Meat Shops
+Food;Coffee & Tea;Sandwiches;Restaurants
+Buffets;Restaurants
+American (New);Restaurants
+Active Life;Sports Clubs
+Italian;Pizza;Restaurants
+Food;Coffee & Tea
+Doctors;Health & Medical;Family Practice
+Steakhouses;Restaurants
+Active Life;Gyms;Fitness & Instruction
+Automotive;Marinas
+Tires;Automotive;Auto Repair
+Thai;Restaurants
+Mexican;Restaurants
+Active Life;Yoga;Fitness & Instruction
+Doctors;Medical Centers;Health & Medical
+Mexican;Restaurants
