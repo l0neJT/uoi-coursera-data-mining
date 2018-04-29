@@ -27,3 +27,13 @@ Implement the **Apriori** mining algorithm in any programming language (Python).
     2) Delimit categories by semi-colon, e.g.: `2851:Fast Food;Restaurants`
     3) Programmatic grader will *not* consider order of cateories in sets
     4) Save as text file "patterns.text"
+
+#### Grade
+
+100% after two attempts, the first to with just part 1 (passed) and second with parts 1 and 2.
+
+#### Comments
+
+I could write a better implementation of the Apriori algorithm. My method to determine next possible word sets to check for support includes more sets than will pass. However, I think a perfect 'next word sets to check' risks taking more processing time than checking more a few more sets than will pass. Not adept enough at analyzing algorithms to say with certainty.
+
+Also, the Apriori algorithm sucks! Both processing time and memory have O(2<sup>n</sup>). Will try the FP Growth algorithm if I find time.
