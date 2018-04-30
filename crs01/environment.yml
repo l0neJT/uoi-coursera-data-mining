@@ -1,0 +1,51 @@
+name: uoi-crs01
+channels:
+  - defaults
+dependencies:
+  - asn1crypto=0.24.0=py36_0
+  - ca-certificates=2018.03.07=0
+  - certifi=2018.4.16=py36_0
+  - cffi=1.11.5=py36h9745a5d_0
+  - chardet=3.0.4=py36h0f667ec_1
+  - cryptography=2.2.2=py36h14c3975_0
+  - decorator=4.3.0=py36_0
+  - idna=2.6=py36h82fb2a8_1
+  - ipython_genutils=0.2.0=py36hb52b0d5_0
+  - jsonschema=2.6.0=py36h006f8b5_0
+  - jupyter_core=4.4.0=py36h7c827e3_0
+  - libedit=3.1=heed3624_0
+  - libffi=3.2.1=hd88cf55_4
+  - libgcc-ng=7.2.0=hdf63c60_3
+  - libstdcxx-ng=7.2.0=hdf63c60_3
+  - nbformat=4.4.0=py36h31c9010_0
+  - ncurses=6.0=h9df7e31_2
+  - openssl=1.0.2o=h20670df_0
+  - pip=9.0.3=py36_0
+  - plotly=2.5.1=py36_0
+  - pycparser=2.18=py36hf9f622e_1
+  - pyopenssl=17.5.0=py36h20ba746_0
+  - pysocks=1.6.8=py36_0
+  - python=3.6.5=hc3d631a_1
+  - pytz=2018.4=py36_0
+  - readline=7.0=ha6073c6_4
+  - requests=2.18.4=py36he2e5f8d_1
+  - setuptools=39.0.1=py36_0
+  - six=1.11.0=py36h372c433_1
+  - sqlite=3.23.1=he433501_0
+  - tk=8.6.7=hc745277_3
+  - traitlets=4.3.2=py36h674d592_0
+  - urllib3=1.22=py36hbe7ace6_0
+  - wheel=0.31.0=py36_0
+  - xz=5.2.3=h5e939de_4
+  - zlib=1.2.11=ha838bed_2
+  - pip:
+    - astroid==1.6.3
+    - ikp3db==1.1.4
+    - isort==4.3.4
+    - jedi==0.12.0
+    - parso==0.2.0
+    - pylint==1.8.4
+    - pylint-django==0.11
+    - virtualenv==15.2.0
+prefix: /home/ec2-user/miniconda3/envs/uoi-crs01
+
