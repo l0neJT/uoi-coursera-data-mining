@@ -18,6 +18,7 @@ dependencies:
   - gmp=6.1.2=h6c8ec71_1
   - html5lib=1.0.1=py36h2f9c1c0_0
   - idna=2.6=py36h82fb2a8_1
+  - intel-openmp=2018.0.0=8
   - ipykernel=4.8.2=py36_0
   - ipython=6.3.1=py36_0
   - ipython_genutils=0.2.0=py36hb52b0d5_0
@@ -27,13 +28,19 @@ dependencies:
   - jsonschema=2.6.0=py36h006f8b5_0
   - jupyter_client=5.2.3=py36_0
   - jupyter_core=4.4.0=py36h7c827e3_0
+  - jupyterlab=0.32.1=py36_0
+  - jupyterlab_launcher=0.10.5=py36_0
   - libedit=3.1=heed3624_0
   - libffi=3.2.1=hd88cf55_4
   - libgcc-ng=7.2.0=hdf63c60_3
+  - libgfortran-ng=7.2.0=hdf63c60_3
   - libsodium=1.0.16=h1bed415_0
   - libstdcxx-ng=7.2.0=hdf63c60_3
   - markupsafe=1.0=py36hd9260cd_1
   - mistune=0.8.3=py36h14c3975_1
+  - mkl=2018.0.2=1
+  - mkl_fft=1.0.1=py36h3010b51_0
+  - mkl_random=1.0.1=py36h629b387_0
   - nb_anacondacloud=1.4.0=py36_0
   - nb_conda=2.2.1=py36h8118bb2_0
   - nb_conda_kernels=2.1.0=py36_0
@@ -42,7 +49,9 @@ dependencies:
   - nbpresent=3.0.2=py36h5f95a39_1
   - ncurses=6.0=h9df7e31_2
   - notebook=5.4.1=py36_0
+  - numpy=1.14.2=py36hdbf6ddf_1
   - openssl=1.0.2o=h20670df_0
+  - pandas=0.22.0=py36hf484d3e_0
   - pandoc=1.19.2.1=hea2e7c5_1
   - pandocfilters=1.4.2=py36ha6701b7_1
   - parso=0.2.0=py36_0
