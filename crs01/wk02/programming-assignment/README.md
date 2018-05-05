@@ -17,16 +17,14 @@ Click below to download the .zip file for this programming assignment.
 
 #### Grading Rubric
 
-**Design of the Chart:**<br>Does the chart effectively display the data, based on the design rules in lecture 2.3.1?
+| Criteria | Poor (1–2 points) | Fair (3 points) | Good (4 points) | Great (5 points) |
+| --- | --- | --- | --- | --- | --- |
+| *Appropriate Chart Selection and Variables* | Chart is indecipherable or significantly misleading because of poor chart type or assignment of variables to elements | Major problem(s) with chart selection or assignment of elements to variables | Minor problem(s) with chart selection or assignment of elements to variables | Chart selection is appropriate for data and its elements properly assigned to appropriate data variables |
+| *Design of the Chart*<sup>1</sup> | No apparent attention paid to design | Evidence that several of the design rules should have been followed but were not | Evidence that one of the design rules should have been followed but was not | Attention paid to all design rules |
+| *Contest*<sup>2</sup> | Misleading | Boring | Not boring | Interesting |
 
-**Contest:**<br>How interesting is the result? Does this represent an interesting choice of data and/or an interesting way to display the data? For example, was a streamgraph used instead of an ordinary bar chart?
-
-Criteria | Poor (1–2 points) | Fair (3 points) | Good (4 points) | Great (5 points)
---- | --- | --- | --- | --- | ---
-*Appropriate Chart Selection and Variables* | Chart is indecipherable or significantly misleading because of poor chart type or assignment of variables to elements | Major problem(s) with chart selection or assignment of elements to variables | Minor problem(s) with chart selection or assignment of elements to variables | Chart selection is appropriate for data and its elements properly assigned to appropriate data variables
-*Design of the Chart* | No apparent attention paid to design | Evidence that several of the design rules should have been followed but were not | Evidence that one of the design rules should have been followed but was not | Attention paid to all design rules
-*Contest* | Misleading | Boring | Not boring | Interesting
-
+<sup>1</sup>Does the chart effectively display the data, based on the design rules in lecture 2.3.1?<br>
+<sup>2</sup>How interesting is the result? Does this represent an interesting choice of data and/or an interesting way to display the data? For example, was a streamgraph used instead of an ordinary bar chart?
 
 #### Input
 
@@ -45,28 +43,28 @@ Criteria | Poor (1–2 points) | Fair (3 points) | Good (4 points) | Great (5 po
 
 Based on lecture 2.1.3, I mapped the data measures to the following graphical elements:
 
-**Global monthly mean temperature difference:**
+**Global Temperature Variation by Month**
 
-|Measure                |Calissificaton     |Graphic          |
-|-----------------------|-------------------|-----------------|
-|Year                   |Ordinal            |Position (x-axis)|
-|Month                  |Nominal<sup>1</sup>|Hue              |
-|Temperature<sup>2</sup>|Quantitative       |Position (y-axis)|
+| Measure                 | Calissificaton      | Graphic           |
+| ----------------------- | ------------------- | ----------------- |
+| Year                    | Ordinal             | Position (x-axis) |
+| Month                   | Nominal<sup>1</sup> | Hue               |
+| Temperature<sup>2</sup> | Quantitative        | Position (y-axis) |
 
 <sup>1</sup>Might consider as different classificaiton (i.e., ordingal) but not in this context
 <sup>2</sup>Difference to mean, by month, from 1951-1980
 
-**Global zonal mean temperature difference:**
+**Global Temperature Variation by Latitude**
 
-|Measure                |Calissificaton|Graphic          |
-|-----------------------|--------------|-----------------|
-|Year                   |Ordinal       |Position (x-axis)|
-|Latitudinal Band       |Nominal       |Hue              |
-|Temperature<sup>1</sup>|Quantitative  |Position (y-axis)|
+| Measure                 | Calissificaton | Graphic           |
+| ----------------------- | -------------- | ----------------- |
+| Year                    | Ordinal        | Position (x-axis) |
+| Latitudinal Band        | Nominal        | Hue               |
+| Temperature<sup>1</sup> | Quantitative   | Position (y-axis) |
 
 <sup>1</sup>Difference to mean, by latitudinal band, from 1951-1980
 
-**Note:** Each of the two datasets has additional measures (e.g., annual, norther vs. southern hemisphere) that I may add using different glyphs. Will still differentiate by hue.
+**Note:** Both datasets have additional measures (e.g., annual, norther vs. southern hemisphere) that I ignored. This both simplified the graphs and kept categories comparable.
 
 #### Grade
 
