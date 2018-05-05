@@ -41,9 +41,32 @@ Criteria | Poor (1–2 points) | Fair (3 points) | Good (4 points) | Great (5 po
     * Rows by year
     * Columns for latitudinal regions
 
-#### Output
+#### Output - Planning
 
-*
+Based on lecture 2.1.3, I mapped the data measures to the following graphical elements:
+
+**Global monthly mean temperature difference:**
+
+|Measure                |Calissificaton     |Graphic          |
+|-----------------------|-------------------|-----------------|
+|Year                   |Ordinal            |Position (x-axis)|
+|Month                  |Nominal<sup>1</sup>|Hue              |
+|Temperature<sup>2</sup>|Quantitative       |Position (y-axis)|
+
+<sup>1</sup>Might consider as different classificaiton (i.e., ordingal) but not in this context
+<sup>2</sup>Difference to mean, by month, from 1951-1980
+
+**Global zonal mean temperature difference:**
+
+|Measure                |Calissificaton|Graphic          |
+|-----------------------|--------------|-----------------|
+|Year                   |Ordinal       |Position (x-axis)|
+|Latitudinal Band       |Nominal       |Hue              |
+|Temperature<sup>1</sup>|Quantitative  |Position (y-axis)|
+
+<sup>1</sup>Difference to mean, by latitudinal band, from 1951-1980
+
+**Note:** Each of the two datasets has additional measures (e.g., annual, norther vs. southern hemisphere) that I may add using different glyphs. Will still differentiate by hue.
 
 #### Grade
 
