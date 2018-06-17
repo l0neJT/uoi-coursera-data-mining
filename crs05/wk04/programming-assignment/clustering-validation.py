@@ -76,45 +76,42 @@ def getPairwiseTruths(p, c):
         Returns:
             :obj:`tuple` of int: (TP, FP, FN, TN)
     """
-    
-    #
-    # Initially attempted to use the n choose k shortcuts from slides but
-    # results did not match assignment not scikit-learn Jaccard coefficient.
-    # Switched to pairwise count...
-    #
-    
-    # # Calcuate true-postives
-    # inter = np.vstack((p, c)).T
-    # interLabels, interCounts = np.unique(inter, axis=0, return_counts=True)
-    # tp = sum(comb(interCounts, 2))
+    # Calcuate true-postives
+    inter = np.vstack((p, c)).T
+    interLabels, interCounts = np.unique(inter, axis=0, return_counts=True)
+    tp = sum(comb(interCounts, 2))
 
-    #  # Calculate false-positives
-    # cLabels, cCounts = np.unique(c, return_counts=True)
-    # fp = sum(comb(cCounts, 2)) - tp
+     # Calculate false-positives
+    cLabels, cCounts = np.unique(c, return_counts=True)
+    fp = sum(comb(cCounts, 2)) - tp
     
-    # # Calcuate false-negatives
-    # pLabels, pCounts = np.unique(p, return_counts=True)
-    # fn = sum(comb(pCounts, 2)) - tp
+    # Calcuate false-negatives
+    pLabels, pCounts = np.unique(p, return_counts=True)
+    fn = sum(comb(pCounts, 2)) - tp
 
-    # Initialize counters
-    tp, fp, fn, tn = 0, 0, 0, 0
+    #
+    # Direct counting method. No longer needed but kept for comparison.
+    #
+
+    # # Initialize counters
+    # tp, fp, fn, tn = 0, 0, 0, 0
     
-    # Iterate through all pairwise combination
-    for i in range(p.size):
-        for j in range(i + 1, c.size):
-            if(p[i,] == p[j,]):
-                if(c[i,] == c[j,]):
-                    tp += 1 # True-Positive: Same partition and cluster
-                else:
-                    fn += 1 # False-Negative: Same partition but diff clusters
-            else:
-                if(c[i,] == c[j,]):
-                    fp += 1 # False-Positive: Diff partitions but same cluster
-                else:
-                    tn += 1 # True-Negative: Diff partitions and diff clusters
+    # # Iterate through all pairwise combination
+    # for i in range(p.size):
+    #     for j in range(i + 1, c.size):
+    #         if(p[i,] == p[j,]):
+    #             if(c[i,] == c[j,]):
+    #                 tp += 1 # True-Positive: Same partition and cluster
+    #             else:
+    #                 fn += 1 # False-Negative: Same partition but diff clusters
+    #         else:
+    #             if(c[i,] == c[j,]):
+    #                 fp += 1 # False-Positive: Diff partitions but same cluster
+    #             else:
+    #                 tn += 1 # True-Negative: Diff partitions and diff clusters
     
     # Return counts as tuple
-    return (tp, fp, fn, tn)
+    return (tp, fp, fn, comb(p.size, 2) - tp - fp - fn)
 
 def getJaccardCoefficient(p, c):
     """Calcuate Jaccard coefficient between a partitioning (ground truth) and
@@ -150,4 +147,10 @@ for f in sorted(glob.iglob('./source/clustering_*.txt')):
 
 # Output validations to text
 np.savetxt(fname="./output/my-validations.txt", X=myValidations, fmt="%1.7f")
+
+
+#
+# CAUTION: Assignment will fail using scikit-learn Jaccard coefficients. Not
+# sure why...
+#
 np.savetxt(fname="./output/sk-validations.txt", X=skValidations, fmt="%1.7f")
