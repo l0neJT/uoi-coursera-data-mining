@@ -6,7 +6,7 @@ pairwise (Jaccard coefficient) validation methods.
 import glob
 import numpy as np
 from math import log, sqrt
-from scipy.special import binom
+from scipy.special import comb
 from sklearn.metrics.cluster import normalized_mutual_info_score
 from sklearn.metrics import jaccard_similarity_score
 
@@ -75,22 +75,46 @@ def getPairwiseTruths(p, c):
 
         Returns:
             :obj:`tuple` of int: (TP, FP, FN, TN)
-    """    
-    # Calcuate true-postives
-    inter = np.vstack((p, c)).T
-    interLabels, interCounts = np.unique(inter, axis=0, return_counts=True)
-    tp = sum(binom(interCounts, 2))
+    """
+    
+    #
+    # Initially attempted to use the n choose k shortcuts from slides but
+    # results did not match assignment not scikit-learn Jaccard coefficient.
+    # Switched to pairwise count...
+    #
+    
+    # # Calcuate true-postives
+    # inter = np.vstack((p, c)).T
+    # interLabels, interCounts = np.unique(inter, axis=0, return_counts=True)
+    # tp = sum(comb(interCounts, 2))
 
-     # Calculate false-positives
-    cLabels, cCounts = np.unique(c, return_counts=True)
-    fp = sum(binom(cCounts, 2)) - tp
+    #  # Calculate false-positives
+    # cLabels, cCounts = np.unique(c, return_counts=True)
+    # fp = sum(comb(cCounts, 2)) - tp
     
-    # Calcuate false-negatives
-    pLabels, pCounts = np.unique(p, return_counts=True)
-    fn = sum(binom(pCounts, 2)) - tp
+    # # Calcuate false-negatives
+    # pLabels, pCounts = np.unique(p, return_counts=True)
+    # fn = sum(comb(pCounts, 2)) - tp
+
+    # Initialize counters
+    tp, fp, fn, tn = 0, 0, 0, 0
     
-    # Return with true-negatives
-    return (tp, fp, fn, binom(p.size, 2) - tp - fp - fn)
+    # Iterate through all pairwise combination
+    for i in range(p.size):
+        for j in range(i + 1, c.size):
+            if(p[i,] == p[j,]):
+                if(c[i,] == c[j,]):
+                    tp += 1 # True-Positive: Same partition and cluster
+                else:
+                    fn += 1 # False-Negative: Same partition but diff clusters
+            else:
+                if(c[i,] == c[j,]):
+                    fp += 1 # False-Positive: Diff partitions but same cluster
+                else:
+                    tn += 1 # True-Negative: Diff partitions and diff clusters
+    
+    # Return counts as tuple
+    return (tp, fp, fn, tn)
 
 def getJaccardCoefficient(p, c):
     """Calcuate Jaccard coefficient between a partitioning (ground truth) and
@@ -117,7 +141,7 @@ partitioning = np.loadtxt(fname="./source/partitions.txt", usecols=1)
 # Iterate through clustering attempts calculating NMI and Jaccard coefficient
 myValidations = []
 skValidations = []
-for f in glob.iglob('./source/clustering_*.txt'):
+for f in sorted(glob.iglob('./source/clustering_*.txt')):
     clustering = np.loadtxt(fname=f, usecols=1)
     myValidations.append([getNMI(partitioning, clustering), \
                         getJaccardCoefficient(partitioning, clustering)])
@@ -125,5 +149,5 @@ for f in glob.iglob('./source/clustering_*.txt'):
                         jaccard_similarity_score(partitioning, clustering)])
 
 # Output validations to text
-np.savetxt(fname="./output/my-validations.txt", X=myValidations, fmt="%1.f")
-np.savetxt(fname="./output/sk-validations.txt", X=skValidations, fmt="%1.f")
+np.savetxt(fname="./output/my-validations.txt", X=myValidations, fmt="%1.7f")
+np.savetxt(fname="./output/sk-validations.txt", X=skValidations, fmt="%1.7f")
