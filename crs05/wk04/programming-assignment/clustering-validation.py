@@ -7,8 +7,8 @@ import glob
 import numpy as np
 from math import log, sqrt
 from scipy.special import binom
-# from sklearn.metrics.cluster import normalized_mutual_info_score
-# from sklearn.metrics import jaccard_similarity_score, confusion_matrix
+from sklearn.metrics.cluster import normalized_mutual_info_score
+from sklearn.metrics import jaccard_similarity_score
 
 def getEntropy(clustering):
     """Calcuate the entropy for a clustering/paritioning.
@@ -115,11 +115,15 @@ partitioning = np.loadtxt(fname="./source/partitions.txt", usecols=1)
 
 
 # Iterate through clustering attempts calculating NMI and Jaccard coefficient
-validations = []
+myValidations = []
+skValidations = []
 for f in glob.iglob('./source/clustering_*.txt'):
     clustering = np.loadtxt(fname=f, usecols=1)
-    validations.append([getNMI(partitioning, clustering), \
+    myValidations.append([getNMI(partitioning, clustering), \
                         getJaccardCoefficient(partitioning, clustering)])
+    skValidations.append([normalized_mutual_info_score(partitioning, clustering), \
+                        jaccard_similarity_score(partitioning, clustering)])
 
 # Output validations to text
-np.savetxt(fname="./output/validations.txt", X=validations, fmt="%1.7f")
+np.savetxt(fname="./output/my-validations.txt", X=myValidations, fmt="%1.f")
+np.savetxt(fname="./output/sk-validations.txt", X=skValidations, fmt="%1.f")
