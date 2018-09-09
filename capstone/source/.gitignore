@@ -1,0 +1,3 @@
+# Ignore Yelp dataset due to size
+yelp_dataset.tar.gz
+yelp_dataset_challenge_academic_dataset
