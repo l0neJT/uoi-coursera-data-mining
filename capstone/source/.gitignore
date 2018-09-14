@@ -1,3 +1,6 @@
-# Ignore Yelp dataset due to size
+# Ignore Yelp data set due to size
 yelp_dataset.tar.gz
 yelp_dataset_challenge_academic_dataset
+
+# Also ignore cleaned data sets; still too large
+yelp_academic_dataset_review.pkl.gzip
