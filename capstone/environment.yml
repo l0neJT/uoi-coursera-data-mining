@@ -9,17 +9,23 @@ dependencies:
   - backcall=0.1.0=py37_0
   - blas=1.0=mkl
   - bleach=2.1.4=py37_0
+  - boto=2.49.0=py37_0
+  - boto3=1.8.2=py37_0
+  - botocore=1.11.2=py37_0
   - ca-certificates=2018.03.07=0
   - certifi=2018.8.24=py37_1
   - cffi=1.11.5=py37he75722e_1
+  - chardet=3.0.4=py37_1
   - constantly=15.1.0=py37h28b3542_0
   - cryptography=2.3.1=py37hc365091_0
   - dbus=1.13.2=h714fa37_1
   - decorator=4.3.0=py37_0
+  - docutils=0.14=py37_0
   - entrypoints=0.2.3=py37_2
   - expat=2.2.6=he6710b0_0
   - fontconfig=2.13.0=h9420a91_0
   - freetype=2.9.1=h8a8886c_1
+  - gensim=3.4.0=py37h14c3975_0
   - glib=2.56.2=hd408876_0
   - gmp=6.1.2=h6c8ec71_1
   - gst-plugins-base=1.14.0=hbbd80ab_1
@@ -36,6 +42,7 @@ dependencies:
   - ipywidgets=7.4.1=py37_0
   - jedi=0.12.1=py37_0
   - jinja2=2.10=py37_0
+  - jmespath=0.9.3=py37_0
   - jpeg=9b=h024ee3a_2
   - jsonschema=2.6.0=py37_0
   - jupyter=1.0.0=py37_5
@@ -82,6 +89,7 @@ dependencies:
   - pygments=2.2.0=py37_0
   - pyopenssl=18.0.0=py37_0
   - pyqt=5.9.2=py37h22d08a2_1
+  - pysocks=1.6.8=py37_0
   - python=3.7.0=hc3d631a_0
   - python-dateutil=2.7.3=py37_0
   - pytz=2018.5=py37_0
@@ -89,6 +97,8 @@ dependencies:
   - qt=5.9.6=h8703b6f_2
   - qtconsole=4.4.1=py37_0
   - readline=7.0=h7b6447c_5
+  - requests=2.19.1=py37_0
+  - s3transfer=0.1.13=py37_0
   - scikit-learn=0.19.1=py37hedc7406_0
   - scipy=1.1.0=py37hfa4b5c9_1
   - send2trash=1.5.0=py37_0
@@ -97,6 +107,7 @@ dependencies:
   - simplegeneric=0.8.1=py37_2
   - sip=4.19.12=py37he6710b0_0
   - six=1.11.0=py37_1
+  - smart_open=1.6.0=py37_0
   - sqlite=3.24.0=h84994c4_0
   - terminado=0.8.1=py37_1
   - testpath=0.3.1=py37_0
@@ -104,6 +115,7 @@ dependencies:
   - tornado=5.1=py37h14c3975_0
   - traitlets=4.3.2=py37_0
   - twisted=18.7.0=py37h14c3975_1
+  - urllib3=1.23=py37_0
   - wcwidth=0.1.7=py37_0
   - webencodings=0.5.1=py37_1
   - wheel=0.31.1=py37_0
