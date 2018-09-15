@@ -125,5 +125,16 @@ dependencies:
   - zlib=1.2.11=ha838bed_2
   - zope=1.0=py37_1
   - zope.interface=4.5.0=py37h14c3975_0
+  - pip:
+    - atomicwrites==1.2.1
+    - funcy==1.10.3
+    - future==0.16.0
+    - joblib==0.12.5
+    - more-itertools==4.3.0
+    - numexpr==2.6.8
+    - pluggy==0.7.1
+    - py==1.6.0
+    - pyldavis==2.1.2
+    - pytest==3.8.0
 prefix: /home/ec2-user/anaconda3/envs/uoi-capstone
 
