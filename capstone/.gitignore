@@ -1,2 +1,5 @@
 # Ignoring work in process files ("wip")
 /wip
+
+# Ignore symlink to AutoPhrase
+AutoPhrase
