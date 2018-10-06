@@ -61,6 +61,8 @@ dependencies:
   - libuuid=1.0.3=h1bed415_2
   - libxcb=1.13=h1bed415_1
   - libxml2=2.9.8=h26e45fe_1
+  - libxslt=1.1.32=h1312cb7_0
+  - lxml=4.2.5=py37hefd8a0e_0
   - markupsafe=1.0=py37h14c3975_1
   - matplotlib=2.2.3=py37hb69df0a_0
   - mistune=0.8.3=py37h14c3975_1
@@ -121,6 +123,7 @@ dependencies:
   - tornado=5.1=py37h14c3975_0
   - traitlets=4.3.2=py37_0
   - twisted=18.7.0=py37h14c3975_1
+  - unidecode=1.0.22=py37_0
   - urllib3=1.23=py37_0
   - wcwidth=0.1.7=py37_0
   - webencodings=0.5.1=py37_1
@@ -143,5 +146,6 @@ dependencies:
     - py==1.6.0
     - pyldavis==2.1.2
     - pytest==3.8.0
+    - wikipedia-api==0.3.7
 prefix: /home/loganjtravis/miniconda3/envs/uoi-capstone
 
