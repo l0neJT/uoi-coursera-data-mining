@@ -50,6 +50,8 @@ dependencies:
   - jupyter_client=5.2.3=py37_0
   - jupyter_console=5.2.0=py37_1
   - jupyter_core=4.4.0=py37_0
+  - jupyterlab=0.35.0=py37_0
+  - jupyterlab_server=0.2.0=py37_0
   - kiwisolver=1.0.1=py37hf484d3e_0
   - libedit=3.1.20170329=h6b74fdf_2
   - libffi=3.2.1=hd88cf55_4
@@ -142,6 +144,7 @@ dependencies:
     - joblib==0.12.5
     - more-itertools==4.3.0
     - numexpr==2.6.8
+    - pdfkit==0.6.1
     - pluggy==0.7.1
     - py==1.6.0
     - pyldavis==2.1.2

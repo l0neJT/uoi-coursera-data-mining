@@ -4,3 +4,7 @@ yelp_dataset_challenge_academic_dataset
 
 # Also ignore cleaned data sets; still too large
 yelp_academic_dataset_review.pkl.gzip
+
+# Ignore Hygiene data set due to size
+Hygiene.tar.gz
+Hygiene
